@@ -6,7 +6,7 @@ A simple and clean **To-Do List Web Application** built using **HTML**, **CSS**,
 
 ## 📸 Preview
 
-![App Screenshot](assets/screenshots/preview.png)
+![App Screenshot](assets/screenshots/preview.png) 
 
 ---
 
