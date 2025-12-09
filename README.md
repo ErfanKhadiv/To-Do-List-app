@@ -78,5 +78,5 @@ GitHub: https://github.com/ErfanKhadiv
 ---
 
 ## 📝 License
-This project is free to use and modify for learning and personal development.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
