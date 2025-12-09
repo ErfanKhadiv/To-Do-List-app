@@ -4,6 +4,12 @@ A simple and clean **To-Do List Web Application** built using **HTML**, **CSS**,
 
 ---
 
+## 📸 Preview
+
+![App Screenshot](assets/screenshots/preview.png)
+
+---
+
 ## 🚀 Features
 
 - **Add new tasks** with name, start time, and end time
