@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do List</title>
+        <!-- style -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/imgs/fav.png" />
+        <!-- icons -->
+        <link
+            rel="stylesheet"
+            href="../../assets/icons/FontAwesome.Pro.6.5.2/css/all.css"
+        />
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- script -->
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/clock.js"></script>
+    </head>
+    <body>
+        <section id="leftSide">
+            <div id="mainNavItems">
+                <div class="mainNavItem" id="profile">
+                    <img
+                        src="assets/imgs/photo_2024-07-03_20-22-59.jpg"
+                        alt="img"
+                    />
+                    <span>Guest</span>
+                </div>
+
+                <div class="mainNavItem" id="clock">
+                    <span id="clockTime"></span>
+                </div>
+
+                <div class="mainNavItem baseBtn inputAdd" id="addTask">
+                    <span>Add Task</span>
+                    <input id="taskName" type="text" placeholder="Task Name" />
+                    <input
+                        id="startTime"
+                        type="text"
+                        placeholder="Start Time"
+                    />
+                    <input id="endTime" type="text" placeholder="End Time" />
+                    <button class="baseBtn" id="addBtn" onclick="addTask()">
+                        Add
+                    </button>
+                </div>
+
+                <div class="mainNavItem" id="calender"></div>
+            </div>
+
+            <footer>
+                <div id="footerBox">
+                    <div class="footerItem">
+                        <span>About</span>
+                        <p>
+                            This website is a simple To-Do list, coded by
+                            'Erfan Khadiv'. It is created using Javascript, HTML
+                            and CSS.
+                        </p>
+                    </div>
+
+                    <div class="footerItem">
+                        <span>Learn More</span>
+                        <ul id="learnMore">
+                            <li>
+                                <a href="https://github.com/ErfanKhadiv"> GitHub </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footerItem">
+                        <span>Contact</span>
+                        <ul id="icons">
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/erphan.kh/?__pwa=1"
+                                >
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://t.me/Erphan_Khadiv">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/erfan-khadiv-777a66279/"
+                                >
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section id="rightSide">
+            <div id="topBtnsBox">
+                <div
+                    onclick="completeAll()"
+                    class="baseBtn topBtn"
+                    id="completeAll"
+                >
+                    <span>Complete All</span>
+                </div>
+
+                <div onclick="clearAll()" class="baseBtn topBtn" id="clearAll">
+                    <span>Clear All</span>
+                </div>
+            </div>
+
+            <div id="tasks" class="tasksBox">
+                <h1 id="tasksH1" onclick="showHideTasks()">
+                    Tasks <i id="iconTasks" class="fa-solid fa-angle-down"></i>
+                </h1>
+                <div id="taskItems" class="taskItems"></div>
+            </div>
+
+            <div id="completedTasks" class="tasksBox">
+                <h1 id="completedTasksH1" onclick="showHideTasksCompleted()">
+                    Completed Tasks
+                    <i
+                        id="iconCompletedTasks"
+                        class="fa-solid fa-angle-down"
+                    ></i>
+                </h1>
+                <div id="taskCompletedItems" class="taskItems"></div>
+            </div>
+        </section>
+    </body>
+</html>
