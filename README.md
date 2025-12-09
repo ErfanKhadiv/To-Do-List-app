@@ -30,11 +30,16 @@ project-folder/
 │── assets/
 │   ├── css/
 │   │   └── style.css
+|   ├── icons/
+|   |   └── FontAwesome.Pro.6.5.2
+|   |       └── . . .
 │   ├── js/
 │   │   ├── index.js
 │   │   └── clock.js
+│   ├── screenshots/
+|   |    └── preview.png
 │   └── imgs/
-│       └── (profile image)
+│       └── . . .
 ```
 
 ---
