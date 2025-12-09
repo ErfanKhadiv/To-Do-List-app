@@ -1,0 +1,290 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* height: 100vh; */
+    height: 100vh;
+    background-color: #6c91c2;
+}
+
+/* left side */
+
+#leftSide {
+    background-color: #c3c9e9;
+    box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.253);
+    /* padding: 20px 0; */
+    border-radius: 0 30px 30px 0;
+    width: 20%;
+    min-height: 100vh;
+}
+
+#mainNavItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainNavItem {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#profile img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#clock {
+    background-color: #373f47;
+    transition-duration: 0.3s;
+    color: white;
+}
+
+.mainNavItem {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 20px;
+}
+
+.baseBtn {
+    background-color: #1e2225;
+    transition-duration: 0.3s;
+    color: white;
+}
+
+.baseBtn:hover {
+    cursor: pointer;
+    background-color: #373f47;
+}
+
+.baseBtn:active {
+    background-color: #646668;
+}
+
+/* right side */
+
+#rightSide {
+    width: 80%;
+    padding: 20px;
+}
+
+#topBtnsBox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topBtn {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 20px;
+}
+
+#completeAll {
+    background-color: #24bb0d;
+}
+
+#completeAll:hover {
+    background-color: #2fda15;
+}
+
+#completeAll:active {
+    background-color: hsl(112, 83%, 65%);
+}
+
+#clearAll {
+    background-color: #c40525;
+}
+
+#clearAll:hover {
+    background-color: #e90329;
+}
+
+#clearAll:active {
+    background-color: hsl(350, 96%, 65%);
+}
+
+.taskItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskItem {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    background-color: #c3c9e9;
+    border-radius: 50px;
+    padding: 5px 30px;
+    transition-duration: 0.3s;
+    color: #373f47;
+}
+
+.taskItem:hover {
+    background-color: #b1b5ca;
+}
+
+.tasksBox h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    width: fit-content;
+    transition-duration: 0.2s;
+}
+
+.tasksBox h1 i {
+    font-size: 1.5rem;
+}
+
+.tasksBox h1:hover {
+    cursor: pointer;
+    color: #373f47;
+}
+
+.taskItem p {
+    font-weight: bold;
+}
+
+.taskItem > div {
+    width: 35%;
+    text-align: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #b1b5ca;
+}
+
+.completed:hover {
+    background-color: #c3c9e9;
+}
+
+#footerBox {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 315px;
+    color: #c3c9e9;
+    background-color: #1e2225;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.footerItem {
+    display: flex;
+}
+
+.footerItem span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.footerItem ul a {
+    text-decoration: none;
+    color: #c3c9e9;
+}
+
+.footerItem ul li a:hover {
+    color: white;
+}
+
+#icons {
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#icons li {
+    margin-right: 10px;
+}
+
+.iconTask {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.tickIcon {
+    background-color: #24bb0d;
+}
+
+.tickIcon:hover {
+    background-color: #2ada0f;
+}
+
+.crossIcon {
+    background-color: #e90329;
+}
+
+.crossIcon:hover {
+    background-color: #ff1d43;
+}
+
+#addTask {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#addTask span {
+    margin-bottom: 20px;
+}
+
+#addTask input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.inputAdd:hover {
+    cursor: auto;
+}
+
+.inputAdd:active {
+    background-color: #373f47;
+}
+
+#addTask input:focus {
+    border: none;
+}
+
+#addTask button {
+    width: 50%;
+    font-size: 1.3rem;
+    border-radius: none;
+    border-radius: 10px;
+}
+
+#addBtn {
+    background-color: #24bb0d;
+}
